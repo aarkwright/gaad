@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/FirstApp.iml" filepath="$PROJECT_DIR$/FirstApp.iml" />
+      <module fileurl="file://D:\git\gaad\01_basics\FirstApp\FirstApp.iml" filepath="D:\git\gaad\01_basics\FirstApp\FirstApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://D:\git\gaad\01_basics\FirstApp\app\app.iml" filepath="D:\git\gaad\01_basics\FirstApp\app\app.iml" />
     </modules>
   </component>
 </project>
