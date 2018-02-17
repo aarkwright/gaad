@@ -1,4 +1,4 @@
-package com.monolithic.notekeeper;
+package aark.space.notekeeper;
 
 import android.database.Cursor;
 import android.os.Parcel;

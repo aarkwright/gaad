@@ -1,4 +1,4 @@
-package com.monolithic.notekeeper;
+package aark.space.notekeeper;
 
 import java.util.ArrayList;
 import java.util.List;

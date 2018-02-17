@@ -1,4 +1,4 @@
-package com.monolithic.notekeeper;
+package aark.space.notekeeper;
 
 import android.os.Parcel;
 import android.os.Parcelable;

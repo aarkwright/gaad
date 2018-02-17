@@ -1,4 +1,4 @@
-package com.monolithic.notekeeper;
+package aark.space.notekeeper;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -25,10 +25,11 @@ public class NoteListActivity extends AppCompatActivity {
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                startActivity(new Intent(NoteListActivity.this, NoteActivity.class));
-             }
+            public void onClick(View v) {
+                startActivity(new Intent(NoteListActivity.this, MainActivity.class));
+            }
         });
+
 
         initializeDisplayContent();
     }
@@ -44,9 +45,9 @@ public class NoteListActivity extends AppCompatActivity {
         listNotes.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent = new Intent(NoteListActivity.this, NoteActivity.class);
+                Intent intent = new Intent(NoteListActivity.this, MainActivity.class);
                 NoteInfo note = (NoteInfo) listNotes.getItemAtPosition(position);
-                intent.putExtra(NoteActivity.NOTE_INFO, note);
+                intent.putExtra(MainActivity.NOTE_INFO, note);
                 startActivity(intent);
             }
         });

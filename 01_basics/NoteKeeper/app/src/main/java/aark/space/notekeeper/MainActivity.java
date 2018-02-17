@@ -1,4 +1,4 @@
-package com.monolithic.notekeeper;
+package aark.space.notekeeper;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,8 +15,8 @@ import android.widget.Spinner;
 
 import java.util.List;
 
-public class NoteActivity extends AppCompatActivity {
-    public static final String NOTE_INFO = "com.jwhh.jim.notekeeper.NOTE_INFO";
+public class MainActivity extends AppCompatActivity {
+    public static final String NOTE_INFO = "aark.space.notekeeper.NOTE_INFO";
     private NoteInfo mNote;
     private boolean mIsNewNote;
 
@@ -38,10 +38,11 @@ public class NoteActivity extends AppCompatActivity {
         readDisplayStateValues();
 
         EditText textNoteTitle = (EditText) findViewById(R.id.text_note_title);
-        EditText textNoteText =  (EditText) findViewById(R.id.text_note_text);
+        EditText textNoteText = (EditText) findViewById(R.id.text_note_text);
 
-        if(!mIsNewNote)
+        if (!mIsNewNote) {
             displayNote(spinnerCourses, textNoteTitle, textNoteText);
+        }
     }
 
     private void displayNote(Spinner spinnerCourses, EditText textNoteTitle, EditText textNoteText) {
